@@ -1,0 +1,267 @@
+
+////////////////////////////////
+           Variables
+////////////////////////////////
+
+$clear-text: #fff
+$dark-text: #444
+$primary-color: #C12127
+$secondary-color: #3E7BBF
+$third-color: #F79E38
+$fourth-color: #1C2326
+
+
+////////////////////////////////
+           General
+////////////////////////////////
+
+html
+	font: normal 14px / 40px 'Open Sans', sans-serif
+	font-weight: 300
+	background: #FFF
+	color: $dark-text
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'Open Sans', sans-serif
+
+////////////////////////////////
+           Buttons
+////////////////////////////////
+
+.uk-button-primary
+	background-color: $primary-color
+	&:hover
+		background-color: darken($primary-color, 10%)
+
+.uk-button-success
+	background-color: $secondary-color
+	&:hover
+		background-color: darken($secondary-color, 10%)
+
+.uk-button-success:focus
+	background-color: $secondary-color
+	&:hover
+		background-color: darken($secondary-color, 10%)
+
+.cover-button
+	padding: 15px 30px
+	min-width: 220px
+	font-size: 20px
+
+////////////////////////////////
+           Index
+////////////////////////////////
+
+.cover
+	background: url('/static/img/cover2.jpg') no-repeat
+	background-size: cover
+
+	h1, h2 
+		color: $clear-text
+		line-height: 70px
+	h1
+		font-size: 60px
+	h2
+		font-size: 40px
+
+.uk-navbar-toggle
+	color: $clear-text
+	text-shadow: none
+	&:hover
+		color: $clear-text
+		text-shadow: none
+
+
+////////////////////////////////
+           Navbar
+////////////////////////////////
+
+.cover 	
+	iframe 
+		max-height: 720px
+
+.uk-navbar
+	background-color: $fourth-color
+	position: relative
+	z-index: 2
+
+	.uk-navbar-nav
+		padding: 10px 15px
+
+		li 
+			&:hover
+				a 
+					background-color: $fourth-color
+					color: $clear-text
+		a
+			color: $clear-text
+			text-shadow: none 
+
+video 
+	position: absolute !important
+	z-index: 1
+
+#uk-navbar-button
+	border-radius: 4px !important
+	&:hover
+		background-color: darken($primary-color, 10%) !important
+
+.uk-position-cover
+	z-index: 3
+
+.uk-navbar-nav > li > a:focus
+	background-color: $fourth-color
+	color: $clear-text
+
+
+.uk-navbar-nav > li.uk-active > a
+
+	background-color: $fourth-color
+	color: $primary-color
+	
+.uk-height-viewport
+	@media (max-width: 480px)
+		h1 
+			margin-top: 50px
+			
+	@media (max-width: 640px)
+		.cover-button
+			float: none
+			text-align: center
+			
+
+////////////////////////////////
+           About
+////////////////////////////////
+
+.about
+	padding-top: 100px
+	padding-bottom: 20px
+
+	h1 
+		font-weight: bold
+		color: #333
+
+////////////////////////////////
+           Sponsors
+////////////////////////////////
+
+.sponsors
+	padding: 50px 0px
+
+	&-list
+		li 
+			list-style-type: none
+			display: inline
+			margin-right: 20px
+			img 
+				max-height: 150px
+				width: auto
+
+.sponsor-level
+	padding: 20px 0px
+	border-bottom: 1px dotted #ddd
+
+.sponsor-level-icon
+	i 
+		font-size: 80px
+		@media (max-width: 768px)
+			font-size: 50px
+	p 
+		margin: 0px
+		margin-top: 10px
+		font-size: 36px
+		@media (max-width: 768px)
+			font-size: 24px
+
+.sponsor-level-diamond
+	i, p 
+		color: darken(#C5CBCC, 5%)
+
+.sponsor-level-platinum
+	i, p 
+		color: darken(#C5CBCC, 20%)
+
+.sponsor-level-gold
+	i, p 
+		color: #C29822
+
+.sponsor-level-silver
+	i, p 
+		color: darken(#D6D7D9, 20%)
+
+.sponsor-level-copper
+	i, p 
+		color: darken(#B37029, 10%)
+
+.sponsor-level-media
+	i, p 
+		color: $primary-color
+
+
+////////////////////////////////
+           Schedule
+////////////////////////////////
+
+.schedule
+	padding: 30px 0px
+	font: normal 15.8px/35px "Open Sans", Helvetica, Arial, sans-serif
+
+////////////////////////////////
+           Collaborators
+////////////////////////////////
+
+.collaborators
+	padding: 30px 0px
+	font: normal 15.8px/35px "Open Sans", Helvetica, Arial, sans-serif
+	img 
+		height: 150px
+
+.organizer 
+	padding: 30px
+	display: inline-block
+
+////////////////////////////////
+           Footer
+////////////////////////////////
+
+
+.footer
+	padding: 50px 0px
+	background-color: $fourth-color
+
+	h1, i, h2 
+		color: $clear-text
+
+	i 
+		font-size: 50px
+		margin: 0px 10px
+
+
+////////////////////////////////
+           Credits
+////////////////////////////////
+
+.credits
+	background-color: darken($fourth-color, 20%)
+	color: $clear-text
+
+	a 
+		color: #D97928
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
